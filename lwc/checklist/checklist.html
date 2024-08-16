@@ -1,0 +1,43 @@
+
+    <lightning-flow if:true={renderFlow} flow-api-name='Next_Step_Flow' flow-input-variables={inputVariables} onstatuschange={handleStatusChange} >
+        
+    </lightning-flow>
+    <div class="slds-p-around_small slds-card slds-card_boundary">
+        <ul class="slds-m-top_x-small slds-has-dividers_bottom-space">
+            <li class="slds-item">
+                <div class="slds-media slds-m-bottom_x-small slds-setup-assistant__step-summary">
+                    <div class="slds-media__figure">
+                        <lightning-progress-ring value="100" size="large" variant={imgVariant} direction="fill"></lightning-progress-ring>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="div-3 slds-setup-assistant__step-summary-title slds-text-heading_small">{name1}</div>
+                    </div>
+                    <div class="slds-media__figure slds-media__figure_reverse">
+                        <lightning-button class="slds-theme_neutral slds-button_outline-brand" variant="neutral" label={label} icon-position="left" type="button" onclick={handleClick}></lightning-button>
+                    </div>
+                </div>
+            </li>
+            <li class="slds-item">
+                <div class="slds-media slds-m-top_x-small slds-m-bottom_x-small slds-setup-assistant__step-summary">
+                    <div class="slds-media__figure">
+                        <lightning-progress-ring size="large" value="100" variant={imgVariant2} direction="fill"></lightning-progress-ring>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="div-2 slds-setup-assistant__step-summary-title slds-text-heading_small">{name2}</div>
+                    </div>
+                    <div class="slds-media__figure slds-media__figure_reverse">
+                        <lightning-button class="slds-theme_neutral slds-button_outline-brand" variant="neutral" label={label2} icon-position="left" type="button" onclick={handleClick2}></lightning-button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slds-media slds-m-top_medium slds-m-right_x-small slds-m-bottom_small slds-m-left_x-small slds-setup-assistant__step-summary">
+            <div class="slds-media__figure">
+                <lightning-progress-ring value="100" size="large" variant={imgVariant3}></lightning-progress-ring>
+            </div>
+            <div class="slds-media__body">
+                <div class="div-1 slds-setup-assistant__step-summary-title slds-text-heading_small">{name3}</div>
+            </div>
+            <lightning-button class="slds-theme_neutral slds-button_outline-brand" variant="neutral" label={label3} icon-position="left" type="button" onclick={handleClick3}></lightning-button>
+        </div>
+    </div>

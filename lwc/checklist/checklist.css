@@ -1,0 +1,12 @@
+.div-1 {
+    display: block;
+    padding: var(--lwc-spacingXSmall)
+}
+.div-2 {
+    padding: var(--lwc-spacingXSmall);
+    display: block
+}
+.div-3 {
+    padding: var(--lwc-spacingXSmall);
+    display: block
+}

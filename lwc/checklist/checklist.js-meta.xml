@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LightningComponentBundle>
+  <apiVersion>55</apiVersion>
+  <description>Checklist</description>
+  <isExposed>true</isExposed>
+  <masterLabel>Checklist</masterLabel>
+  <targets>
+    <target>lightning__AppPage</target>
+    <target>lightning__HomePage</target>
+    <target>lightning__RecordPage</target>
+    <target>lightning__Tab</target>
+    <target>lightning__FlowScreen</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__RecordPage,lightning__FlowScreen">
+      <property name="name1" label="First Property" description="Name of the first property to check" type="String" default="Preuve d'Études" placeholder="Preuve d'Études"/>
+      <property name="name2" label="Second Property" description="Name of the second property to check" type="String" default="Pièce d'Identité" placeholder="Pièce d'Identité"/>
+      <property name="name3" label="Third Property" description="Name of the third property to check" type="String" default="Preuve de capacité financière" placeholder="Preuve de capacité financière"/>
+      <property name="recordId" label="recordId" type="String"/>
+      <property type="String" name="imgVariant" label="Img Variant" default="warning" placeholder="warning"/>
+      <property type="Boolean" name="docCheck1" label="Doc Check 1"/>
+      <property type="Boolean" name="docCheck2" label="Doc Check 2"/>
+      <property type="Boolean" name="docCheck3" label="Doc Check 3"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
